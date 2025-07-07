@@ -4,7 +4,6 @@
   --secondary: #2f5bea;
   --dark: #1a1a1a;
   --light: #f8f9fa;
-  --success: #28a745;
 }
 
 * {
@@ -22,6 +21,11 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .container {
@@ -143,7 +147,7 @@ header {
 }
 
 .contact-number {
-  display: flex;
+  display: block;
   align-items: center;
   background-color: var(--primary);
   color: white;
@@ -703,6 +707,71 @@ footer {
   font-size: 14px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.progress-circle-track {
+  fill: transparent;
+  stroke: rgb(74, 78, 86);
+  stroke-width: 2;
+}
+
+.progress-circle-fill {
+  fill: transparent;
+  stroke: var(--primary);
+  stroke-width: 3;
+  stroke-dasharray: 138;
+  stroke-dashoffset: 138;
+  transition: stroke-dashoffset 0.1s linear;
+  -webkit-transition: stroke-dashoffset 0.1s linear;
+  -moz-transition: stroke-dashoffset 0.1s linear;
+  -ms-transition: stroke-dashoffset 0.1s linear;
+  -o-transition: stroke-dashoffset 0.1s linear;
+}
+
+.arrow-icon {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .nav-links ul {
@@ -731,9 +800,13 @@ footer {
     padding: 15px 0;
   }
 
+  .contact-number {
+    display: none;
+  }
+
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 85px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 80px);
@@ -826,14 +899,13 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .logo-img {
-    height: 30px;
+  .nav-links {
+    top: 67px;
+    height: 100%;
   }
 
-  .contact-number {
-    padding: 6px 10px;
-    font-size: 12px;
-    margin-right: 10px;
+  .logo-img {
+    height: 30px;
   }
 
   .mobile-menu-btn {
