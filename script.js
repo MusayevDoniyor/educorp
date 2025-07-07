@@ -41,4 +41,33 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.remove("active");
     });
   });
+
+  window.onload = function () {
+    const searchBox = document.querySelector(".gsc-input");
+    if (searchBox) {
+      searchBox.placeholder = "Sayt bo'ylab qidirish...";
+      searchBox.setAttribute("aria-label", "Sayt bo'ylab qidirish");
+    }
+
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".gsc-input")) {
+        document
+          .querySelector(".search-results-container")
+          .classList.add("active");
+      } else if (!e.target.closest(".gcse-searchresults-only")) {
+        document
+          .querySelector(".search-results-container")
+          .classList.remove("active");
+      }
+    });
+  };
+
+  const searchContainer = document.querySelector(".search-results-container");
+  const closeBtn = document.createElement("button");
+  closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+  closeBtn.className = "close-search-results";
+  closeBtn.addEventListener("click", function () {
+    searchContainer.classList.remove("active");
+  });
+  searchContainer.prepend(closeBtn);
 });
