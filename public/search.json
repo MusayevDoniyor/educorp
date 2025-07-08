@@ -1,0 +1,387 @@
+[
+  {
+    "objectID": "hero-001",
+    "title": "1 Oyda Kompaniyangizda Ichki Akademiyani Yo'lga Qo'yib Beramiz",
+    "description": "Smartfon orqali adaptasiya, malaka oshirish, bilimni baholash, rag'batlantirish",
+    "section": "hero",
+    "keywords": [
+      "ichki akademiya",
+      "korporativ ta'lim",
+      "smartfon",
+      "adaptatsiya",
+      "malaka oshirish",
+      "bilim baholash",
+      "rag'batlantirish",
+      "xodimlar",
+      "biznes"
+    ],
+    "url": "#home"
+  },
+  {
+    "objectID": "benefits-001",
+    "title": "2x Tezroq Adaptatsiya",
+    "description": "Yangi xodimlarni 2 karra tezroq kompaniyaga adaptatsiya qilish",
+    "section": "benefits",
+    "keywords": [
+      "adaptatsiya",
+      "xodimlar",
+      "tezroq",
+      "korporativ ta'lim",
+      "yangi xodimlar"
+    ],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "benefits-002",
+    "title": "Qulay Format",
+    "description": "Turli viloyatlardagi xodimlarga qulay formatda bilim yetkazish",
+    "section": "benefits",
+    "keywords": [
+      "qulay format",
+      "viloyatlar",
+      "xodimlar",
+      "bilim yetkazish",
+      "onlayn ta'lim"
+    ],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "benefits-003",
+    "title": "Jamoa Bilimi",
+    "description": "Yuqori malakali xodimlar bilimini butun jamoaga tatbiq qilish",
+    "section": "benefits",
+    "keywords": ["jamoa", "bilim", "malaka", "xodimlar", "tatbiq qilish"],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "benefits-004",
+    "title": "Vaqtni Tejash",
+    "description": "Xodimlar vaqtini tejash. Istalgan vaqt, istalgan joydan bilim olish imkoni",
+    "section": "benefits",
+    "keywords": [
+      "vaqt tejash",
+      "xodimlar",
+      "bilim olish",
+      "onlayn ta'lim",
+      "istalgan joy"
+    ],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "benefits-005",
+    "title": "Samaradorlik",
+    "description": "Tizimli ta'limni yo'lga qo'yish orqali xodimlar samaradorligini oshirish",
+    "section": "benefits",
+    "keywords": [
+      "samaradorlik",
+      "tizimli ta'lim",
+      "xodimlar",
+      "oshirish",
+      "korporativ ta'lim"
+    ],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "benefits-006",
+    "title": "Xarajatlarni Kamaytirish",
+    "description": "Xodimlarni rivojlantirishga ajratilgan sarmoyani 3 karra qisqartirish imkoni",
+    "section": "benefits",
+    "keywords": [
+      "xarajatlar",
+      "kamaytirish",
+      "xodimlar",
+      "sarmoya",
+      "rivojlantirish"
+    ],
+    "url": "#benefits"
+  },
+  {
+    "objectID": "about-001",
+    "title": "Maqsadimiz",
+    "description": "Korporativ ta'limni qulaylashtirish orqali, xodimlar rivojlanishiga hissa qo'shish. Jamiyat rivojida bizneslarning o'rni katta. Biznes rivojlanishida esa, jamoa eng muhim omildir. Biz kompaniyalar xodimlarini rivojlantirish orqali, bizneslar rivojiga hissa qo'shish uchun yo'lga chiqdik.",
+    "section": "about",
+    "keywords": [
+      "maqsad",
+      "korporativ ta'lim",
+      "xodimlar",
+      "rivojlanish",
+      "biznes",
+      "jamoa",
+      "Habibulloh Karimov",
+      "EDUCORP"
+    ],
+    "url": "#about"
+  },
+  {
+    "objectID": "services-001",
+    "title": "Yo'l Xaritasini Tasdiqlaymiz",
+    "description": "Mijoz bilan kelishilgan reja asosida barcha ish bosqichlarini aniqlab olamiz.",
+    "section": "services",
+    "keywords": [
+      "yo'l xaritasi",
+      "tasdiqlash",
+      "reja",
+      "bosqichlar",
+      "mijoz",
+      "ta'lim strategiyasi"
+    ],
+    "url": "#services"
+  },
+  {
+    "objectID": "services-002",
+    "title": "Tex Topshiriq Tuzish",
+    "description": "Loyiha talablariga mos aniq va tushunarli hujjat tayyorlaymiz.",
+    "section": "services",
+    "keywords": ["tex topshiriq", "hujjat", "loyiha", "talablar", "tuzish"],
+    "url": "#services"
+  },
+  {
+    "objectID": "services-003",
+    "title": "Video Yozish",
+    "description": "Ssenariy asosida sifatli tasvirga olish jarayonini amalga oshiramiz.",
+    "section": "services",
+    "keywords": [
+      "video yozish",
+      "ssenariy",
+      "sifatli",
+      "tasvirga olish",
+      "darsliklar"
+    ],
+    "url": "#services"
+  },
+  {
+    "objectID": "services-004",
+    "title": "Video Montaj",
+    "description": "Yozilgan materialni professional tarzda tahrirlaymiz va kerakli effektlar qo'shamiz.",
+    "section": "services",
+    "keywords": [
+      "video montaj",
+      "tahrir",
+      "effektlar",
+      "professional",
+      "material"
+    ],
+    "url": "#services"
+  },
+  {
+    "objectID": "services-005",
+    "title": "Test Tuzish",
+    "description": "Auditoriya bilimini baholash uchun moslashtirilgan savollarni tayyorlaymiz.",
+    "section": "services",
+    "keywords": [
+      "test tuzish",
+      "bilim baholash",
+      "savollar",
+      "moslashtirilgan",
+      "auditoriya"
+    ],
+    "url": "#services"
+  },
+  {
+    "objectID": "services-006",
+    "title": "Platformaga Yuklash",
+    "description": "Tayyor kontentni kerakli formatda yuklab, foydalanishga tayyor holga keltiramiz.",
+    "section": "services",
+    "keywords": [
+      "platformaga yuklash",
+      "kontent",
+      "format",
+      "LMS",
+      "foydalanish"
+    ],
+    "url": "#services"
+  },
+  {
+    "objectID": "task-001",
+    "title": "Tex Topshiriq Tuzish - Mahsulot Bo'yicha",
+    "description": "Mahsulot bo'yicha texnik topshiriqlar tayyorlash.",
+    "section": "task",
+    "keywords": ["tex topshiriq", "mahsulot", "tayyorlash", "hujjat"],
+    "url": "#task"
+  },
+  {
+    "objectID": "task-002",
+    "title": "Tex Topshiriq Tuzish - Ish Jarayonlari Bo'yicha",
+    "description": "Ish jarayonlari bo'yicha texnik topshiriqlar tayyorlash.",
+    "section": "task",
+    "keywords": ["tex topshiriq", "ish jarayonlari", "tayyorlash", "hujjat"],
+    "url": "#task"
+  },
+  {
+    "objectID": "video-samples-001",
+    "title": "Video Darslik - ZARQAND",
+    "description": "ZARQAND uchun tayyorlangan video darslik namunasi.",
+    "section": "video-samples",
+    "keywords": ["video darslik", "ZARQAND", "namuna", "ta'lim kontenti"],
+    "url": "#video-samples"
+  },
+  {
+    "objectID": "video-samples-002",
+    "title": "Video Darslik - Ahmad Tea",
+    "description": "Ahmad Tea uchun tayyorlangan video darslik namunasi.",
+    "section": "video-samples",
+    "keywords": ["video darslik", "Ahmad Tea", "namuna", "ta'lim kontenti"],
+    "url": "#video-samples"
+  },
+  {
+    "objectID": "video-samples-003",
+    "title": "Video Darslik - Молочный домик",
+    "description": "Молочный домик uchun tayyorlangan video darslik namunasi.",
+    "section": "video-samples",
+    "keywords": [
+      "video darslik",
+      "Molocniy Domik",
+      "Молочный домик",
+      "namuna",
+      "ta'lim kontenti"
+    ],
+    "url": "#video-samples"
+  },
+  {
+    "objectID": "video-samples-004",
+    "title": "Video Darslik - Aqcham",
+    "description": "Aqcham uchun tayyorlangan video darslik namunasi.",
+    "section": "video-samples",
+    "keywords": ["video darslik", "Aqcham", "namuna", "ta'lim kontenti"],
+    "url": "#video-samples"
+  },
+  {
+    "objectID": "team-001",
+    "title": "Metodolog",
+    "description": "Darslik metodologiyasini ishlab chiqadi.",
+    "section": "team",
+    "keywords": ["metodolog", "darslik", "metodologiya", "ta'lim dizayni"],
+    "url": "#team"
+  },
+  {
+    "objectID": "team-002",
+    "title": "LMS Menejer",
+    "description": "Platformani boshqarish va sozlash.",
+    "section": "team",
+    "keywords": ["LMS", "menejer", "platforma", "boshqarish", "sozlash"],
+    "url": "#team"
+  },
+  {
+    "objectID": "team-003",
+    "title": "Video Operator",
+    "description": "Professional video yozib olish.",
+    "section": "team",
+    "keywords": [
+      "video operator",
+      "yozib olish",
+      "professional",
+      "video darslik"
+    ],
+    "url": "#team"
+  },
+  {
+    "objectID": "team-004",
+    "title": "Montaj Mutaxassisi",
+    "description": "Videolarni professional tarzda montaj qilish.",
+    "section": "team",
+    "keywords": ["montaj", "mutaxassis", "video tahrir", "professional"],
+    "url": "#team"
+  },
+  {
+    "objectID": "clients-001",
+    "title": "Mijozlarimiz",
+    "description": "1000+ tayyorlangan darsliklar soni, 30+ loyihalar. Mijozlar: Profi Pharm, Ahmad Tea, Молочный домик, NOVEY.",
+    "section": "clients",
+    "keywords": [
+      "mijozlar",
+      "Profi Pharm",
+      "Ahmad Tea",
+      "Molocniy Domik",
+      "Молочный домик",
+      "NOVEY",
+      "darsliklar",
+      "loyihalar"
+    ],
+    "url": "#clients"
+  },
+  {
+    "objectID": "testimonials-001",
+    "title": "Mijoz Fikri - Azizbek Toshmatov",
+    "description": "Educorp jamoasi yordamida biz kompaniyamizda ichki akademiyani yo'lga qo'ydik. Xodimlarimizning malakasi sezilarli darajada oshdi.",
+    "section": "testimonials",
+    "keywords": [
+      "mijoz fikri",
+      "Azizbek Toshmatov",
+      "Profi Pharm",
+      "ichki akademiya",
+      "malaka oshirish"
+    ],
+    "url": "#testimonials"
+  },
+  {
+    "objectID": "testimonials-002",
+    "title": "Mijoz Fikri - Dilfuza Rahimova",
+    "description": "Turli hududlardagi xodimlarimiz uchun yagona ta'lim platformasini yaratishda Educorp jamoasi juda yaxshi ish qildi. Natijalar ajoyib!",
+    "section": "testimonials",
+    "keywords": [
+      "mijoz fikri",
+      "Dilfuza Rahimova",
+      "Ahmad Tea",
+      "ta'lim platformasi",
+      "natijalar"
+    ],
+    "url": "#testimonials"
+  },
+  {
+    "objectID": "cta-001",
+    "title": "Xodimlaringizni Rivojlantirishni Boshlang",
+    "description": "Biz bilan bog'laning va kompaniyangiz uchun maxsus korporativ ta'lim tizimini yo'lga qo'ying.",
+    "section": "cta",
+    "keywords": [
+      "rivojlantirish",
+      "korporativ ta'lim",
+      "bog'lanish",
+      "xodimlar",
+      "tizim"
+    ],
+    "url": "#contact"
+  },
+  {
+    "objectID": "contact-001",
+    "title": "Bog'lanish",
+    "description": "Biz bilan aloqaga chiqing, sizga yordam berishdan mamnun bo'lamiz. Manzil: Toshkent shahri, Yunusobod tumani. Telefon: +998 78 113-98-58. Email: info@educorp.uz",
+    "section": "contact",
+    "keywords": [
+      "bog'lanish",
+      "aloqa",
+      "Toshkent",
+      "Yunusobod",
+      "telefon",
+      "email",
+      "info@educorp.uz"
+    ],
+    "url": "#contact"
+  },
+  {
+    "objectID": "footer-001",
+    "title": "Educorp - Korporativ Ta'lim",
+    "description": "Educorp - korporativ ta'lim sohasida innovatsion yechimlar taqdim etuvchi kompaniya. Biz xodimlar rivojlanishiga hissa qo'shamiz.",
+    "section": "footer",
+    "keywords": [
+      "Educorp",
+      "korporativ ta'lim",
+      "innovatsion yechimlar",
+      "xodimlar rivojlanishi"
+    ],
+    "url": "#footer"
+  },
+  {
+    "objectID": "footer-002",
+    "title": "Bizning Manzil",
+    "description": "Toshkent shahri, Mustaqillik kochasi, 78-uy, Educorp ofisi. Biz bilan bog'laning.",
+    "section": "footer",
+    "keywords": [
+      "manzil",
+      "Toshkent",
+      "Mustaqillik ko'chasi",
+      "Educorp ofisi",
+      "bog'lanish"
+    ],
+    "url": "#footer"
+  }
+]

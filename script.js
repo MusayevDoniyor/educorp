@@ -42,32 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  window.onload = function () {
-    const searchBox = document.querySelector(".gsc-input");
-    if (searchBox) {
-      searchBox.placeholder = "Sayt bo'ylab qidirish...";
-      searchBox.setAttribute("aria-label", "Sayt bo'ylab qidirish");
-    }
-
-    document.addEventListener("click", function (e) {
-      if (e.target.closest(".gsc-input")) {
-        document
-          .querySelector(".search-results-container")
-          .classList.add("active");
-      } else if (!e.target.closest(".gcse-searchresults-only")) {
-        document
-          .querySelector(".search-results-container")
-          .classList.remove("active");
-      }
-    });
-  };
-
-  const searchContainer = document.querySelector(".search-results-container");
-  const closeBtn = document.createElement("button");
-  closeBtn.innerHTML = '<i class="fas fa-times"></i>';
-  closeBtn.className = "close-search-results";
-  closeBtn.addEventListener("click", function () {
-    searchContainer.classList.remove("active");
-  });
-  searchContainer.prepend(closeBtn);
+  const ALGOLIA_APP_ID = "9U8UEPE46P";
+  const ALGOLIA_SEARCH_API_KEY = "e6b8edfdcfdc5d3475bd92a9977e2165";
+  const ALGOLIA_INDEX_NAME = "search";
 });
