@@ -41,8 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.remove("active");
     });
   });
-
-  const ALGOLIA_APP_ID = "9U8UEPE46P";
-  const ALGOLIA_SEARCH_API_KEY = "e6b8edfdcfdc5d3475bd92a9977e2165";
-  const ALGOLIA_INDEX_NAME = "search";
 });
