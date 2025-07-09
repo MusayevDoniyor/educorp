@@ -1,118 +1,109 @@
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-const navLinks = document.getElementById("navLinks");
-const backToTopBtn = document.getElementById("backToTop");
-const progressFill = document.querySelector(".progress-circle-fill");
+document.addEventListener("DOMContentLoaded", function () {
+  // Cache DOM elements
+  const elements = {
+    mobileMenuBtn: document.getElementById("mobileMenuBtn"),
+    navLinks: document.getElementById("navLinks"),
+    backToTopBtn: document.getElementById("backToTop"),
+    progressFill: document.querySelector(".progress-circle-fill"),
+  };
 
-window.addEventListener("scroll", function () {
-  const scrollPosition = window.scrollY;
-  const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercentage = scrollPosition / pageHeight;
+  // Scroll handler with debounce
+  let isScrolling;
+  window.addEventListener(
+    "scroll",
+    function () {
+      window.clearTimeout(isScrolling);
+      isScrolling = setTimeout(() => {
+        const scrollPosition = window.scrollY;
+        const pageHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercentage = Math.min(scrollPosition / pageHeight, 1);
 
-  // Update progress circle
-  const circumference = 138; // 2πr ≈ 138
-  const offset = circumference - scrollPercentage * circumference;
-  progressFill.style.strokeDashoffset = offset;
+        // Progress circle
+        if (elements.progressFill) {
+          const circumference = 138;
+          const offset = circumference - scrollPercentage * circumference;
+          elements.progressFill.style.strokeDashoffset = offset;
+        }
 
-  // Show button after scrolling a bit
-  if (scrollPosition > 300) {
-    backToTopBtn.classList.add("visible");
-  } else {
-    backToTopBtn.classList.remove("visible");
-  }
-});
+        // Back to top button
+        if (elements.backToTopBtn) {
+          elements.backToTopBtn.classList.toggle(
+            "visible",
+            scrollPosition > 300
+          );
+        }
+      }, 16);
+    },
+    { passive: true }
+  );
 
-// Smooth scroll to top
-backToTopBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
+  // Event delegation
+  document.addEventListener("click", function (e) {
+    // Mobile menu toggle
+    if (
+      e.target === elements.mobileMenuBtn ||
+      e.target.closest("#mobileMenuBtn")
+    ) {
+      elements.navLinks.classList.toggle("active");
+      return;
+    }
 
-mobileMenuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+    // Nav links close
+    if (e.target.closest(".nav-links a")) {
+      elements.navLinks.classList.remove("active");
+      return;
+    }
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-});
+    // Back to top
+    if (e.target === elements.backToTopBtn || e.target.closest("#backToTop")) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
 
-new Swiper(".clients-swiper-top", {
-  slidesPerView: "auto",
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  speed: 3000,
-  freeMode: true,
-  freeModeMomentum: false,
-  allowTouchMove: false,
-});
+    // Accordion
+    const accordionHeader = e.target.closest(".accordion-header");
+    if (accordionHeader) {
+      const item = accordionHeader.parentElement;
+      const row = item.closest(".accordion-row");
+      const wasActive = item.classList.contains("active");
 
-// Bottom swiper (right to left)
-new Swiper(".clients-swiper-bottom", {
-  slidesPerView: "auto",
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-    reverseDirection: true,
-  },
-  speed: 3000,
-  freeMode: true,
-  freeModeMomentum: false,
-  allowTouchMove: false,
-});
+      row.querySelectorAll(".accordion-item").forEach((i) => {
+        i.classList.remove("active");
+      });
 
-const companyTypes = document.querySelectorAll(".company-type");
-
-companyTypes.forEach((type) => {
-  type.addEventListener("mouseenter", () => {
-    type.style.transform = "translateY(-5px)";
-    type.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.1)";
-  });
-
-  type.addEventListener("mouseleave", () => {
-    type.style.transform = "translateY(0)";
-    type.style.boxShadow = "none";
-  });
-});
-
-// Step cards animation
-const steps = document.querySelectorAll(".step");
-
-steps.forEach((step) => {
-  step.addEventListener("mouseenter", () => {
-    step.style.transform = "translateY(-5px)";
-    step.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+      if (!wasActive) {
+        item.classList.add("active");
+      }
+    }
   });
 
-  step.addEventListener("mouseleave", () => {
-    step.style.transform = "translateY(0)";
-    step.style.boxShadow = "0 5px 15px rgba(0,0,0,0.05)";
-  });
-});
-
-const rows = document.querySelectorAll(".accordion-row");
-
-rows.forEach((row) => {
-  const items = row.querySelectorAll(".accordion-item");
-
-  items.forEach((item) => {
-    const header = item.querySelector(".accordion-header");
-
-    header.addEventListener("click", () => {
-      // Close all items in this row
-      items.forEach((i) => i.classList.remove("active"));
-
-      // Open the clicked item
-      item.classList.add("active");
+  if (document.querySelector(".clients-swiper-top")) {
+    new Swiper(".clients-swiper-top", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      autoplay: { delay: 0, disableOnInteraction: false },
+      speed: 3000,
+      freeMode: true,
+      freeModeMomentum: false,
+      allowTouchMove: false,
     });
-  });
+
+    new Swiper(".clients-swiper-bottom", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      speed: 3000,
+      freeMode: true,
+      freeModeMomentum: false,
+      allowTouchMove: false,
+    });
+  }
 });

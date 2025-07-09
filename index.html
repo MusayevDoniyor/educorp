@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Educorp - korporativ ta'lim platformasi. Xodimlaringizni rivojlantirish uchun to'liq yechimlar. Ichki akademiya, tayyor kurslar bazasi va professional xizmatlar."
+    />
+    <meta
+      name="keywords"
+      content="korporativ ta'lim, lms, xodimlarni rivojlantirish, online kurslar, ichki akademiya"
+    />
+    <meta name="author" content="EDUCORP" />
     <title>EDUCORP - Korporativ Ta'lim Platformasi</title>
-    <!-- FONT AWESOME ICONS -->
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- GOOGLE FONTS -->
+
+    <!-- Google Fonts - Preconnect va preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- SWIPER -->
+
+    <!-- Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
 
-    <!-- CSS AND JS CODES -->
+    <!-- CSS va JS - Preload -->
+    <link rel="preload" href="./style.css" as="style" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
   </head>
@@ -667,32 +686,66 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                   <h4>Manzil</h4>
-                  <p>Toshkent shahri, Yunusobod tumani</p>
+                  <p>Toshkent shahri, Mustaqillik kochasi, 78 uy.</p>
                 </div>
               </div>
+
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <div>
                   <h4>Telefon</h4>
-                  <p>+998 78 113-98-58</p>
+                  <p><a href="tel:+998 78 113-98-58">+998 78 113-98-58</a></p>
                 </div>
               </div>
+
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
                 <div>
                   <h4>Email</h4>
-                  <p>info@educorp.uz</p>
+                  <p><a href="mailto:info@educorp.uz">info@educorp.uz</a></p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="contact-form">
-            <form>
-              <input type="text" placeholder="Ismingiz" required />
-              <input type="email" placeholder="Email manzilingiz" required />
-              <input type="tel" placeholder="Telefon raqamingiz" />
+            <form aria-label="Aloqa formasi">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ismingiz"
+                required
+                aria-required="true"
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email manzilingiz"
+                required
+                aria-required="true"
+              />
+
+              <input
+                type="tel"
+                placeholder="Telefon raqamingiz"
+                id="phone"
+                name="phone"
+              />
+
               <textarea placeholder="Xabaringiz..."></textarea>
-              <button type="submit" class="btn">Xabar yuborish</button>
+              <button
+                type="submit"
+                class="btn"
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+              >
+                Xabar yuborish
+              </button>
             </form>
           </div>
         </div>
