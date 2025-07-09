@@ -83,3 +83,36 @@ companyTypes.forEach((type) => {
     type.style.boxShadow = "none";
   });
 });
+
+// Step cards animation
+const steps = document.querySelectorAll(".step");
+
+steps.forEach((step) => {
+  step.addEventListener("mouseenter", () => {
+    step.style.transform = "translateY(-5px)";
+    step.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+  });
+
+  step.addEventListener("mouseleave", () => {
+    step.style.transform = "translateY(0)";
+    step.style.boxShadow = "0 5px 15px rgba(0,0,0,0.05)";
+  });
+});
+
+const rows = document.querySelectorAll(".accordion-row");
+
+rows.forEach((row) => {
+  const items = row.querySelectorAll(".accordion-item");
+
+  items.forEach((item) => {
+    const header = item.querySelector(".accordion-header");
+
+    header.addEventListener("click", () => {
+      // Close all items in this row
+      items.forEach((i) => i.classList.remove("active"));
+
+      // Open the clicked item
+      item.classList.add("active");
+    });
+  });
+});

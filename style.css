@@ -15,6 +15,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #f8f9fa;
 }
 
 body {
@@ -103,7 +105,7 @@ section {
 }
 
 .color-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 /* Global Scrollbar Styles */
@@ -508,6 +510,103 @@ header {
 .team-info p {
   color: var(--primary);
   font-weight: 500;
+}
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.accordion-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: transparent;
+}
+
+.accordion-item.active .accordion-content {
+  background-color: #f8f9fa;
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accordion-title h4 {
+  margin: 0;
+  color: #333;
+  font-size: 19px;
+}
+
+.accordion-icon i {
+  font-size: 20px;
+}
+
+.accordion-item.active .accordion-title h4 {
+  color: var(--primary);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 20px;
+}
+
+.accordion-arrow i {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-arrow i {
+  transform: rotate(90deg);
+  color: var(--primary);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.benefit-list li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.benefit-list i {
+  color: var(--primary);
 }
 
 /* Clients Section */
@@ -1006,6 +1105,12 @@ footer {
 
   .about .section-img {
     order: 1;
+  }
+
+  .accordion-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .task-card {
