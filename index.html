@@ -16,30 +16,44 @@
 
     <!-- Font Awesome -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    /></noscript>
 
     <!-- Google Fonts - Preconnect va preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    /></noscript>
 
     <!-- Swiper -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <script
-      defer
-      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
-    ></script>
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    /></noscript>
 
     <!-- CSS va JS - Preload -->
     <link rel="preload" href="./style.css" as="style" />
@@ -52,7 +66,11 @@
       <div class="container">
         <nav class="navbar">
           <a href="#" class="logo">
-            <img src="./images/educorp.png" alt="EDUCORP" class="logo-img" />
+            <img
+              src="./images/webp/educorp.webp"
+              alt="EDUCORP"
+              class="logo-img"
+            />
           </a>
 
           <div class="nav-links" id="navLinks">
@@ -183,7 +201,7 @@
         </div>
         <div class="section-img">
           <img
-            src="./images/Hamidulloh_Karimov.png"
+            src="./images/webp/Hamidulloh_Karimov.webp"
             alt="Habibulloh Karimov"
             class="about-image"
             width="250px"
@@ -205,7 +223,7 @@
             <div class="number">1 - bosqich</div>
             <div class="service-card-title">
               <img
-                src="./images/roadmap.png"
+                src="./images/webp/roadmap.webp"
                 alt="Roadmap Confirmation"
                 class="service-img"
               />
@@ -224,7 +242,7 @@
 
             <div class="service-card-title">
               <img
-                src="./images/tasks.png"
+                src="./images/webp/tasks.webp"
                 alt="Creating tasks"
                 class="service-img"
               />
@@ -241,7 +259,7 @@
 
             <div class="service-card-title">
               <img
-                src="./images/video_recording.png"
+                src="./images/webp/video_recording.webp"
                 alt="Video Recording"
                 class="service-img"
               />
@@ -259,7 +277,7 @@
 
             <div class="service-card-title">
               <img
-                src="./images/video_editing.png"
+                src="./images/webp/video_editing.webp"
                 alt="Video Editing"
                 class="service-img"
               />
@@ -277,7 +295,7 @@
 
             <div class="service-card-title">
               <img
-                src="./images/creating_tests.png"
+                src="./images/webp/creating_tests.webp"
                 alt="Creating Tests"
                 class="service-img"
               />
@@ -295,7 +313,7 @@
 
             <div class="service-card-title">
               <img
-                src="./images/upload_platform.png"
+                src="./images/webp/upload_platform.webp"
                 alt="Upload To Platform"
                 class="service-img"
               />
@@ -323,14 +341,14 @@
             <h3>Mahsulot bo'yicha</h3>
 
             <img
-              src="./images/creating_tex_task-img1.png"
+              src="./images/webp/creating_tex_task-img1.webp"
               alt="Creating Tex Task By Product"
             />
           </div>
           <div class="task-card">
             <h3>Ish jarayonlari bo'yicha</h3>
             <img
-              src="./images/creating_tex_task-img2.png"
+              src="./images/webp/creating_tex_task-img2.webp"
               alt="Creating Tex Task By Work Process"
             />
           </div>
@@ -529,46 +547,94 @@
         <!-- Top row (left to right) -->
         <div class="logo-track logo-track-top">
           <div class="logo-slide">
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
             <!-- Duplicate for seamless loop -->
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
           </div>
         </div>
 
         <!-- Bottom row (right to left) -->
         <div class="logo-track logo-track-bottom">
           <div class="logo-slide">
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
             <!-- Duplicate for seamless loop -->
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
-            <img src="./images/Novey.png" alt="NOVEY" class="novey" />
-            <img src="./images/Molochniy_Domik.png" alt="Молочный домик" />
-            <img src="./images/Ahmad_Tea.png" alt="ATIMATI TEA" />
-            <img src="./images/Profi_Pharm_Service.png" alt="Profi Pharm" />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
+            <img src="./images/webp/Novey.webp" alt="NOVEY" class="novey" />
+            <img
+              src="./images/webp/Molochniy_Domik.webp"
+              alt="Молочный домик"
+            />
+            <img src="./images/webp/Ahmad_Tea.webp" alt="ATIMATI TEA" />
+            <img
+              src="./images/webp/Profi_Pharm_Service.webp"
+              alt="Profi Pharm"
+            />
           </div>
         </div>
       </div>
