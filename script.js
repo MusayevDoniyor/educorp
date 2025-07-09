@@ -69,3 +69,17 @@ new Swiper(".clients-swiper-bottom", {
   freeModeMomentum: false,
   allowTouchMove: false,
 });
+
+const companyTypes = document.querySelectorAll(".company-type");
+
+companyTypes.forEach((type) => {
+  type.addEventListener("mouseenter", () => {
+    type.style.transform = "translateY(-5px)";
+    type.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.1)";
+  });
+
+  type.addEventListener("mouseleave", () => {
+    type.style.transform = "translateY(0)";
+    type.style.boxShadow = "none";
+  });
+});
