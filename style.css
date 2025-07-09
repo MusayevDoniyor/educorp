@@ -136,7 +136,7 @@ header {
   margin: 0 auto;
   top: -4px;
   z-index: 1000;
-  padding: 5px 0;
+  padding: 7px 0;
 }
 
 .navbar {
@@ -1045,7 +1045,7 @@ footer {
   }
 
   .nav-links {
-    top: 50px;
+    top: 48px;
     height: 100%;
   }
 
