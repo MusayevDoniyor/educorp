@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -551,33 +552,62 @@ header {
 /* Clients Section */
 .clients {
   background-color: #f8f9fa;
+  padding: 60px 0;
+  overflow: hidden;
 }
 
-.client-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 35px;
-  align-items: center;
+.logo-track {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 15px 0;
 }
 
-.client-logos img {
+.logo-track-top {
+  margin-bottom: 5px;
+}
+
+.logo-track-bottom {
+  margin-top: 5px;
+}
+
+.logo-slide {
+  display: inline-block;
+  animation: slide 30s linear infinite;
+}
+
+.logo-track-bottom .logo-slide {
+  animation-direction: reverse;
+}
+
+.logo-slide img {
   height: 60px;
+  width: auto;
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: middle;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  opacity: 0.7;
+  filter: grayscale(100%);
 }
 
-.client-logos .novey {
+.logo-slide .novey {
   height: 45px;
 }
 
-.client-logos img:hover {
+.logo-slide img:hover {
   filter: grayscale(0);
   opacity: 1;
-  -webkit-filter: grayscale(0);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Testimonials Section */
@@ -837,8 +867,25 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-  .nav-links ul {
-    gap: 20px;
+  .navbar .logo-img {
+    height: 55px;
+    width: auto;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .contact-number {
+    padding: 10px 15px;
+  }
+
+  .contact-number i {
+    margin-right: 0;
+  }
+
+  .contact-number span {
+    display: none;
   }
 
   .section-title h2 {
