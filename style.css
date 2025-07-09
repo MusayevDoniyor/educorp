@@ -565,6 +565,9 @@ header {
   font-size: 20px;
 }
 
+.accordion-item.active .accordion-icon i {
+  color: var(--primary);
+}
 .accordion-item.active .accordion-title h4 {
   color: var(--primary);
 }
