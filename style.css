@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--primary) #f8f9fa;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -62,11 +63,11 @@ a {
   border: none;
   cursor: pointer;
   border-radius: 12px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -83,6 +84,7 @@ a {
   color: var(--primary);
   border: 2px solid var(--primary);
 }
+
 .btn-secondary:hover {
   background: var(--primary);
   color: var(--light);
@@ -100,7 +102,7 @@ section {
 }
 
 .section-title h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
   color: var(--dark);
   margin-bottom: 20px;
@@ -112,7 +114,7 @@ section {
 }
 
 .section-title p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #555;
   font-size: 18px;
   font-weight: 400;
@@ -169,10 +171,6 @@ header {
   height: 60px;
   width: auto;
   transition: transform 0.3s ease;
-  -webkit-transition: transform 0.3s ease;
-  -moz-transition: transform 0.3s ease;
-  -ms-transition: transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
@@ -186,7 +184,7 @@ header {
 }
 
 .nav-links a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--dark);
   font-weight: 600;
   font-size: 16px;
@@ -200,17 +198,17 @@ header {
 }
 
 .contact-number {
-  display: block;
+  display: flex;
   align-items: center;
   background: var(--gradient);
   color: white;
   padding: 12.5px 20px;
   border-radius: 12px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -255,13 +253,14 @@ header {
   z-index: -1;
   filter: brightness(0.6);
 }
+
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
 }
 
 .hero h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 54px;
   margin-bottom: 25px;
   line-height: 1.3;
@@ -270,7 +269,7 @@ header {
 }
 
 .hero-content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -283,7 +282,7 @@ header {
   margin-top: 2.5rem;
 }
 
-/* Benefits-grid */
+/* Benefits Section */
 .benefits {
   background: linear-gradient(180deg, #f8f9fa, #ffffff);
 }
@@ -308,7 +307,7 @@ header {
 }
 
 .benefit-card h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   margin-bottom: 15px;
   color: var(--dark);
@@ -316,7 +315,7 @@ header {
 }
 
 .benefit-card p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #555;
@@ -341,7 +340,7 @@ header {
 }
 
 .about .section-title h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--primary);
   text-align: left;
   margin-bottom: 20px;
@@ -350,7 +349,7 @@ header {
 }
 
 .about .section-title p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: left;
   margin-bottom: 25px;
   font-size: 18px;
@@ -367,7 +366,7 @@ header {
 }
 
 .about .quote {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -377,7 +376,7 @@ header {
 }
 
 .about .author {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   color: var(--primary);
   font-size: 16px;
@@ -417,7 +416,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 20px 0;
@@ -438,14 +437,14 @@ header {
 }
 
 .service-card h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   flex: 1;
   font-size: 22px;
   font-weight: 700;
 }
 
 .service-card p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #555;
@@ -470,7 +469,7 @@ header {
 }
 
 .task-card h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   color: var(--primary);
   font-weight: 700;
@@ -519,19 +518,20 @@ header {
 }
 
 .team-info h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   margin-bottom: 8px;
   font-weight: 700;
 }
 
 .team-info p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--primary);
   font-weight: 500;
   font-size: 16px;
 }
 
+/* Accordion Section */
 .accordion-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -576,7 +576,7 @@ header {
 }
 
 .accordion-title h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   color: #333;
   font-size: 20px;
@@ -608,7 +608,7 @@ header {
 }
 
 .accordion-content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #555;
@@ -630,7 +630,7 @@ header {
 }
 
 .benefit-list li {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -762,12 +762,12 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: bold;
   border: 2px solid white;
 }
 
 .type-content h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   margin-bottom: 12px;
   color: var(--dark);
@@ -775,7 +775,7 @@ header {
 }
 
 .type-content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #666;
   font-size: 15px;
   font-style: italic;
@@ -784,21 +784,21 @@ header {
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(135deg, #e56a15, #ff8c00);
+  background: var(--gradient);
   padding: 80px 0;
   color: white;
   text-align: center;
 }
 
 .cta h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .cta p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   max-width: 800px;
   margin: 0 auto 30px;
@@ -817,7 +817,7 @@ header {
 }
 
 .contact-info h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 26px;
   margin-bottom: 25px;
   font-weight: 700;
@@ -841,13 +841,13 @@ header {
 }
 
 .contact-item h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 
 .contact-item p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -868,7 +868,7 @@ header {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -894,7 +894,7 @@ footer {
 }
 
 .footer-col h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   margin-bottom: 20px;
   position: relative;
@@ -915,6 +915,24 @@ footer {
   background: var(--gradient);
 }
 
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-col p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
 .footer-col ul {
   list-style: none;
 }
@@ -924,7 +942,7 @@ footer {
 }
 
 .footer-col ul li a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #bbb;
   font-size: 16px;
   font-weight: 400;
@@ -936,13 +954,10 @@ footer {
   transform: translateX(5px);
 }
 
-.footer-col .social-links {
-  margin-top: 1.5rem;
-}
-
 .social-links {
   display: flex;
   gap: 15px;
+  margin-top: 1.5rem;
 }
 
 .social-links a {
@@ -967,7 +982,7 @@ footer {
   padding-top: 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #bbb;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -1026,13 +1041,13 @@ footer {
   font-weight: bold;
 }
 
+/* Responsive Styles */
 @media (max-width: 1440px) {
   .back-to-top {
     right: 30px;
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .navbar .logo-img {
     height: 45px;
@@ -1175,9 +1190,7 @@ footer {
   }
 
   .accordion-grid {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
   }
 
   .task-card {
@@ -1292,7 +1305,7 @@ footer {
   }
 }
 
-/* AOS Overrides */
+/* AOS */
 [data-aos] {
   visibility: hidden;
 }
@@ -1301,7 +1314,6 @@ footer {
   visibility: visible;
 }
 
-/* Ensure AOS animations don't interfere with existing transitions */
 .benefit-card,
 .service-card,
 .team-card,
