@@ -83,14 +83,19 @@
       href="./images/webp/hero_bg_img.webp"
       type="image/webp"
     />
-  </head>
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
   <body>
     <!-- Header -->
     <header>
       <div class="container">
         <nav class="navbar">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-down" data-aos-delay="100">
             <img
               loading="lazy"
               src="./images/webp/educorp.webp"
@@ -98,24 +103,51 @@
               class="logo-img"
             />
           </a>
-
-          <div class="nav-links" id="navLinks">
+          <div
+            class="nav-links"
+            id="navLinks"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <ul>
-              <li><a href="#home">Bosh sahifa</a></li>
-              <li><a href="#services">Xizmatlar</a></li>
-              <li><a href="#about">Biz haqimizda</a></li>
-              <li><a href="#team">Jamoa</a></li>
-              <li><a href="#contact">Bog'lanish</a></li>
+              <li>
+                <a href="#home" data-aos="fade-right" data-aos-delay="300"
+                  >Bosh sahifa</a
+                >
+              </li>
+              <li>
+                <a href="#services" data-aos="fade-right" data-aos-delay="400"
+                  >Xizmatlar</a
+                >
+              </li>
+              <li>
+                <a href="#about" data-aos="fade-right" data-aos-delay="500"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li>
+                <a href="#team" data-aos="fade-right" data-aos-delay="600"
+                  >Jamoa</a
+                >
+              </li>
+              <li>
+                <a href="#contact" data-aos="fade-right" data-aos-delay="700"
+                  >Bog'lanish</a
+                >
+              </li>
             </ul>
           </div>
-
-          <div class="nav-cta">
+          <div class="nav-cta" data-aos="fade-left" data-aos-delay="200">
             <a href="tel:+781139858" class="contact-number">
               <i class="fas fa-phone"></i><span> Aloqa qiling</span>
             </a>
           </div>
-
-          <div class="mobile-menu-btn" id="mobileMenuBtn">
+          <div
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <i class="fas fa-bars"></i>
           </div>
         </nav>
@@ -132,21 +164,21 @@
         width="1920"
         height="1080"
         decoding="async"
+        data-aos="fade"
+        data-aos-duration="1200"
       />
       <div class="container">
-        <div class="hero-content">
-          <h1>
+        <div class="hero-content" data-aos="zoom-in" data-aos-delay="300">
+          <h1 data-aos="fade-up" data-aos-delay="400">
             1 OYDA KOMPANIYANGIZDA
             <span class="color-primary">ICHKI AKADEMIYANI</span> YO'LGA QO'YIB
             BERAMIZ
           </h1>
-
-          <p>
-            <span class="color-primary">Smartfon orqali</span>
-            adaptasiya, malaka oshirish, bilimni baholash, rag'batlantirish
+          <p data-aos="fade-up" data-aos-delay="500">
+            <span class="color-primary">Smartfon orqali</span> adaptasiya,
+            malaka oshirish, bilimni baholash, rag'batlantirish
           </p>
-
-          <div class="hero-buttons">
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
             <a href="#contact" class="btn hero-btn">Bepul konsultatsiya</a>
             <a href="#services" class="btn btn-secondary">Xizmatlarimiz</a>
           </div>
@@ -157,41 +189,38 @@
     <!-- Benefits Section -->
     <section class="benefits">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>
-            <span class="color-primary">NIMA UCHUN</span>
-            KOMPANIYALAR ONLAYN TA'LIMNI YO'LGA QO'YADILAR?
+            <span class="color-primary">NIMA UCHUN</span> KOMPANIYALAR ONLAYN
+            TA'LIMNI YO'LGA QO'YADILAR?
           </h2>
         </div>
         <div class="benefits-grid">
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-bolt"></i>
             <h3>2x tezroq adaptatsiya</h3>
             <p>
               Yangi xodimlarni 2 karra tezroq kompaniyaga adaptatsiya qilish
             </p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-globe"></i>
             <h3>Qulay format</h3>
             <p>
               Turli viloyatlardagi xodimlarga qulay formatda bilim yetkazish
             </p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
             <i class="fas fa-users"></i>
             <h3>Jamoa bilimi</h3>
             <p>Yuqori malakali xodimlar bilimini butun jamoaga tatbiq qilish</p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
             <i class="fas fa-clock"></i>
             <h3>Vaqtni tejash</h3>
-            <p>
-              Xodimlar vaqtini tejash. Istalgan vaqt, istalgan joydan bilim
-              olish imkoni
-            </p>
+            <p>Istalgan vaqt, istalgan joydan bilim olish imkoni</p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
             <i class="fas fa-chart-line"></i>
             <h3>Samaradorlik</h3>
             <p>
@@ -199,7 +228,7 @@
               oshirish
             </p>
           </div>
-          <div class="benefit-card">
+          <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
             <i class="fas fa-wallet"></i>
             <h3>Xarajatlarni kamaytirish</h3>
             <p>
@@ -214,7 +243,7 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-right">
           <div class="section-title">
             <h2 class="color-primary">Maqsadimiz</h2>
             <p>
@@ -222,19 +251,16 @@
               rivojlanishiga hissa qo'shish
             </p>
           </div>
-
           <div class="about-text">
             <p class="quote">
               "Jamiyat rivojida bizneslarning o'rni katta. Biznes rivojlanishida
               esa, jamoa eng muhim omildir. Biz kompaniyalar xodimlarini
-              rivojlantirish orqali, bizneslar rivojiga hissa qo'shish uchun
-              yo'lga chiqdik."
+              rivojlantirish orqali, bizneslar rivojiga hissa qo'shish uchun"
             </p>
-
             <p class="author">Habibulloh Karimov, EDUCORP MChJ rahbari</p>
           </div>
         </div>
-        <div class="section-img">
+        <div class="section-img" data-aos="fade-left">
           <img
             loading="lazy"
             src="./images/webp/Hamidulloh_Karimov.webp"
@@ -250,12 +276,12 @@
     <!-- Services Section -->
     <section class="services" id="services">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Qanday bosqichlarda xizmat ko'rsatamiz?</h2>
         </div>
 
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="number">1 - bosqich</div>
             <div class="service-card-title">
               <img
@@ -274,7 +300,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="number">2 - bosqich</div>
 
             <div class="service-card-title">
@@ -292,7 +318,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="number">3 - bosqich</div>
 
             <div class="service-card-title">
@@ -311,7 +337,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
             <div class="number">4 - bosqich</div>
 
             <div class="service-card-title">
@@ -330,7 +356,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
             <div class="number">5 - bosqich</div>
 
             <div class="service-card-title">
@@ -349,7 +375,7 @@
             </p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
             <div class="number">6 - bosqich</div>
 
             <div class="service-card-title">
@@ -374,21 +400,19 @@
     <!-- Creating Tex Task Section -->
     <section class="task">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Tex Topshiriq tuzish</h2>
         </div>
-
         <div class="task-grid">
-          <div class="task-card">
+          <div class="task-card" data-aos="fade-right">
             <h3>Mahsulot bo'yicha</h3>
-
             <img
               loading="lazy"
               src="./images/webp/creating_tex_task-img1.webp"
               alt="Creating Tex Task By Product"
             />
           </div>
-          <div class="task-card">
+          <div class="task-card" data-aos="fade-left">
             <h3>Ish jarayonlari bo'yicha</h3>
             <img
               loading="lazy"
@@ -403,12 +427,12 @@
     <!-- Team Section -->
     <section class="team" id="team">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Loyihangiz bo'yicha ishlaydigan mutaxassislar</h2>
         </div>
 
         <div class="team-grid">
-          <div class="team-card">
+          <div class="team-card" data-aos="flip-left" data-aos-delay="100">
             <div class="team-img">
               <img
                 loading="lazy"
@@ -421,7 +445,8 @@
               <p>Darslik metodologiyasini ishlab chiqadi</p>
             </div>
           </div>
-          <div class="team-card">
+
+          <div class="team-card" data-aos="flip-left" data-aos-delay="200">
             <div class="team-img">
               <img
                 loading="lazy"
@@ -434,7 +459,8 @@
               <p>Platformani boshqarish va sozlash</p>
             </div>
           </div>
-          <div class="team-card">
+
+          <div class="team-card" data-aos="flip-left" data-aos-delay="300">
             <div class="team-img">
               <img
                 loading="lazy"
@@ -447,7 +473,8 @@
               <p>Professional video yozib olish</p>
             </div>
           </div>
-          <div class="team-card">
+
+          <div class="team-card" data-aos="flip-left" data-aos-delay="400">
             <div class="team-img">
               <img
                 loading="lazy"
@@ -467,7 +494,7 @@
     <!-- Accordion Section -->
     <section class="educorp-accordion">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2 class="color-primary">NIMA UCHUN EDUCORP?</h2>
           <h3>KOMPANIYANGIZGA QANDAY QIYMAT KELTIRAMIZ?</h3>
         </div>
@@ -476,7 +503,11 @@
           <!-- First Row -->
           <div class="accordion-row">
             <!-- Accordion Item 1 -->
-            <div class="accordion-item active">
+            <div
+              class="accordion-item active"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div class="accordion-header">
                 <div class="accordion-title">
                   <div class="accordion-icon">
@@ -508,7 +539,11 @@
             </div>
 
             <!-- Accordion Item 2 -->
-            <div class="accordion-item">
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <div class="accordion-header">
                 <div class="accordion-title">
                   <div class="accordion-icon">
@@ -537,7 +572,11 @@
           <!-- Second Row -->
           <div class="accordion-row">
             <!-- Accordion Item 3 -->
-            <div class="accordion-item active">
+            <div
+              class="accordion-item active"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <div class="accordion-header">
                 <div class="accordion-title">
                   <div class="accordion-icon">
@@ -559,7 +598,11 @@
             </div>
 
             <!-- Accordion Item 4 -->
-            <div class="accordion-item">
+            <div
+              class="accordion-item"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
               <div class="accordion-header">
                 <div class="accordion-title">
                   <div class="accordion-icon">
@@ -587,13 +630,13 @@
     <!-- Clients Section -->
     <section class="clients">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Bizga ishonch bildirgan mijozlarimiz</h2>
           <p>1000+ tayyorlangan darsliklar soni • 30+ loyihalar</p>
         </div>
 
         <!-- Top row (left to right) -->
-        <div class="logo-track logo-track-top">
+        <div class="logo-track logo-track-top" data-aos="fade-right">
           <div class="logo-slide">
             <img
               loading="lazy"
@@ -637,7 +680,6 @@
               alt="NOVEY"
               class="novey"
             />
-            <!-- Duplicate for seamless loop -->
             <img
               loading="lazy"
               src="./images/webp/Profi_Pharm_Service.webp"
@@ -684,7 +726,7 @@
         </div>
 
         <!-- Bottom row (right to left) -->
-        <div class="logo-track logo-track-bottom">
+        <div class="logo-track logo-track-bottom" data-aos="fade-left">
           <div class="logo-slide">
             <img
               loading="lazy"
@@ -728,7 +770,6 @@
               src="./images/webp/Profi_Pharm_Service.webp"
               alt="Profi Pharm"
             />
-            <!-- Duplicate for seamless loop -->
             <img
               loading="lazy"
               src="./images/webp/Novey.webp"
@@ -779,7 +820,7 @@
     <!-- Target Companies Section -->
     <section class="target-companies">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>
             <span class="color-primary">QANDAY KOMPANIYALAR</span> UCHUN FOYDALI
             BO'LADI?
@@ -788,7 +829,7 @@
 
         <div class="company-types">
           <!-- Type 1 (80%+ ko'rsatkichi) -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="100">
             <div class="type-icon">
               <i class="fas fa-users"></i>
               <span class="percentage">80%+</span>
@@ -800,7 +841,7 @@
           </div>
 
           <!-- Type 2 (15+ ko'rsatkichi) -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="200">
             <div class="type-icon">
               <i class="fas fa-exchange-alt"></i>
               <span class="number">15+</span>
@@ -812,7 +853,7 @@
           </div>
 
           <!-- Type 3 -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="300">
             <div class="type-icon">
               <i class="fas fa-map-marked-alt"></i>
             </div>
@@ -823,7 +864,7 @@
           </div>
 
           <!-- Type 4 -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="400">
             <div class="type-icon">
               <i class="fas fa-code-branch"></i>
             </div>
@@ -834,7 +875,7 @@
           </div>
 
           <!-- Type 5 -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="500">
             <div class="type-icon">
               <i class="fas fa-microchip"></i>
             </div>
@@ -845,7 +886,7 @@
           </div>
 
           <!-- Type 6 -->
-          <div class="company-type">
+          <div class="company-type" data-aos="fade-up" data-aos-delay="600">
             <div class="type-icon">
               <i class="fas fa-chart-line"></i>
             </div>
@@ -860,20 +901,22 @@
 
     <!-- CTA Section -->
     <section class="cta">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <h2>Xodimlaringizni bugundan rivojlantirishni boshlang!</h2>
         <p>
           80%+ kompaniyalar bizning yechimlarimiz bilan samaradorlikni oshirdi.
           Bepul konsultatsiya oling!
         </p>
-        <a href="#contact" class="btn">Darhol Bog'lanish</a>
+        <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="200"
+          >Darhol Bog'lanish</a
+        >
       </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Bog'lanish</h2>
           <p>
             Biz bilan aloqaga chiqing, sizga yordam berishdan mamnun bo'lamiz
@@ -881,7 +924,7 @@
         </div>
 
         <div class="contact-container">
-          <div class="contact-info">
+          <div class="contact-info" data-aos="fade-right">
             <h3>Aloqa ma'lumotlari</h3>
             <div class="contact-details">
               <div class="contact-item">
@@ -911,44 +954,55 @@
           </div>
 
           <div class="contact-form">
-            <form aria-label="Aloqa formasi">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Ismingiz"
-                required
-                aria-required="true"
-              />
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email manzilingiz"
-                required
-                aria-required="true"
-              />
-
-              <input
-                type="tel"
-                placeholder="Telefon raqamingiz"
-                id="phone"
-                name="phone"
-              />
-
-              <textarea placeholder="Xabaringiz..."></textarea>
-              <button
-                type="submit"
-                class="btn"
-                id="message"
-                name="message"
-                required
-                aria-required="true"
-              >
-                Xabar yuborish
-              </button>
-            </form>
+            <div class="contact-form" data-aos="fade-left">
+              <form aria-label="Aloqa formasi">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ismingiz"
+                  required
+                  aria-required="true"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email manzilingiz"
+                  required
+                  aria-required="true"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                />
+                <input
+                  type="tel"
+                  placeholder="Telefon raqamingiz"
+                  id="phone"
+                  name="phone"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                />
+                <textarea
+                  placeholder="Xabaringiz..."
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn"
+                  id="message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  Xabar yuborish
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -958,8 +1012,16 @@
     <footer>
       <div class="container">
         <div class="footer-container">
-          <div class="footer-col">
-            <h3>EDUCORP</h3>
+          <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+            <h3>
+              <img
+                src="./images/webp/educorp-icon.webp"
+                alt="EDUCORP ICON"
+                class="footer-icon"
+                width="40"
+                height="40"
+              />EDUCORP
+            </h3>
             <p>
               Kompaniyalarga korporativ ta'lim yechimlarini taqdim etuvchi
               yetakchi provayder
@@ -971,7 +1033,8 @@
               <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-          <div class="footer-col">
+
+          <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
             <h3>Xizmatlar</h3>
             <ul>
               <li><a href="#">Ichki akademiya</a></li>
@@ -980,7 +1043,8 @@
               <li><a href="#">Metodik yordam</a></li>
             </ul>
           </div>
-          <div class="footer-col">
+
+          <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
             <h3>Kompaniya</h3>
             <ul>
               <li><a href="#">Biz haqimizda</a></li>
@@ -989,7 +1053,8 @@
               <li><a href="#">Karyera</a></li>
             </ul>
           </div>
-          <div class="footer-col">
+
+          <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
             <h3>Yordam</h3>
             <ul>
               <li><a href="#">FAQ</a></li>
@@ -999,7 +1064,8 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
+
+        <div class="footer-bottom" data-aos="fade-up" data-aos-delay="500">
           <p>&copy; 2025 EDUCORP. Barcha huquqlar himoyalangan</p>
         </div>
       </div>

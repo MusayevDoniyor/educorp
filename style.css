@@ -165,9 +165,13 @@ header {
 }
 
 .logo-img {
-  height: 55px;
+  height: 60px;
   width: auto;
   transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
@@ -896,6 +900,9 @@ footer {
   position: relative;
   padding-bottom: 12px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer-col h3::after {
@@ -965,6 +972,7 @@ footer {
   font-weight: 400;
 }
 
+/* Back To Top Btn */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -1027,7 +1035,7 @@ footer {
 /* Responsive Styles */
 @media (max-width: 992px) {
   .navbar .logo-img {
-    height: 40px;
+    height: 45px;
   }
 
   .nav-links a {
@@ -1099,7 +1107,7 @@ footer {
   }
 
   .logo-img {
-    height: 35px;
+    height: 40px;
   }
 
   .nav-links ul {
@@ -1185,6 +1193,7 @@ footer {
 
   .task-card img {
     width: 100%;
+    height: 110px;
   }
 
   .company-types {
@@ -1214,7 +1223,7 @@ footer {
   }
 
   .logo-img {
-    height: 45px;
+    height: 50px;
   }
 
   .mobile-menu-btn {
@@ -1281,4 +1290,27 @@ footer {
   .cta p {
     font-size: 16px;
   }
+}
+
+/* AOS Overrides */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].aos-animate {
+  visibility: visible;
+}
+
+/* Ensure AOS animations don't interfere with existing transitions */
+.benefit-card,
+.service-card,
+.team-card,
+.company-type,
+.btn,
+.contact-number,
+.logo-img,
+.nav-links a,
+.social-links a,
+.back-to-top {
+  transition: all 0.3s ease, visibility 0s !important;
 }

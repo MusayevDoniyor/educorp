@@ -96,4 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+  AOS.init({
+    duration: window.innerWidth <= 768 ? 600 : 800,
+    easing: "ease-in-out",
+    once: true,
+    offset: 100,
+  });
 });
