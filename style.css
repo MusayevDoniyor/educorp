@@ -44,9 +44,10 @@ a {
 }
 
 .container {
+  max-width: 1440px;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
   padding: 0 15px;
 }
 
@@ -1100,7 +1101,7 @@ footer {
     left: -100%;
     width: 100%;
     height: calc(100vh - 65px);
-    background: linear-gradient(180deg, #ffffff, #f8f9fa);
+    background: var(--light);
     transition: all 0.5s ease;
     padding: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
